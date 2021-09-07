@@ -1,0 +1,186 @@
+:root {
+  --clr-yellow: #ffff90;
+  --clr-red: tomato;
+  --clr-pink: #f08084;
+  --clr-blue: #6060e0;
+  --clr-green: #91da61;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  background: var(--clr-pink);
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.card {
+  transform-style: preserve-3d;
+  height: 80vh;
+  width: 30vw;
+  min-width: 20rem;
+  border-radius: 30px;
+  padding: 0 2rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.card__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: var(--clr-red);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -100;
+}
+.info {
+  transform-style: preserve-3d;
+}
+
+.title {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+  transform-style: preserve-3d;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  transform-style: preserve-3d;
+}
+
+/* Buttons */
+
+.color-options {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+  transform-style: preserve-3d;
+}
+
+.color-options button {
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  min-height: 2rem;
+  min-width: 2rem;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.color-options button:hover,
+.color-options button:focus {
+  box-shadow: none;
+  outline-color: rgba(0, 0, 0, 0.2);
+  outline-style: none;
+}
+
+.red {
+  background: var(--clr-pink);
+}
+.blue {
+  background: var(--clr-blue);
+}
+.yellow {
+  background: var(--clr-yellow);
+}
+.purple {
+  background: var(--clr-green);
+}
+
+.purchase__btn {
+  margin-top: 2rem;
+  transform-style: preserve-3d;
+  transition: all 0.75s ease-out;
+}
+
+.purchase__btn button {
+  width: 100%;
+  padding: 1rem 0;
+  background: var(--clr-red);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.purchase__btn button:hover,
+.purchase__btn button:focus {
+  background: var(--clr-pink);
+}
+
+.car {
+  width: 10rem;
+  z-index: 10;
+  transition: all 0.75s ease-out;
+}
+
+/* CAR ANIMATION */
+
+.wheel-left,
+.wheel-right {
+  animation: unset;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.car {
+  animation: unset;
+  /* animation: car 1s ease-in-out infinite alternate; */
+  transform-origin: bottom;
+}
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes car {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}

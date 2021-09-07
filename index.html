@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D card effect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <div class="card__top">
+            <div class="circle"></div>
+            <div class="car">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 339.85 370.67"><g class="car-wrapper" stroke-width="2"><path class="car-body" d="M371.63,555.39l-34-.46a25,25,0,0,1-24.47-22.14l-2.44-21.44a29.12,29.12,0,0,0-28.93-25.82H218.44a29.73,29.73,0,0,0-29.37,25.14l-2.94,18.82a27.22,27.22,0,0,1-27.26,23l-22.76-.31c-18.35-.25-34.87,19.31-34.87,37.66,0,0,.47.27,1.42.72,4.2,2,14.53,2.94,20,2.94H393.3a8,8,0,0,0,8-8h0A30.11,30.11,0,0,0,371.63,555.39Z" transform="translate(-61.48 -255.89)" fill="#f08084"/><path class="car-frame" data-name="car-frame" d="M202.69,468.65h-25a29.73,29.73,0,0,0-29.38,25.15l-2.93,18.81a27.25,27.25,0,0,1-27.27,23l-22.76-.31A32.91,32.91,0,0,0,62,568.24v.39c0,4.43,28.67,17.62,40.68,22" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/><path class="car-frame" data-name="car" d="M392.52,564.22c-16-18.61-29.22-25.48-45.68-25.7l-34-.46a25,25,0,0,1-24.47-22.15l-2.44-21.44" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/><line class="car-frame" data-name="car" x1="236.71" y1="235.37" x2="213.12" y2="219.5" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/></g><g class="wheels" stroke-width="2"><g class="wheel-left"><circle class="wheel-1" cx="143.24" cy="344.7" r="24.47" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="4"/><line class="wheel-1" data-name="wheel-1" x1="118.77" y1="344.7" x2="167.71" y2="344.7" fill="none" stroke="#1d1d1b" stroke-miterlimit="10"/><line class="wheel-1" data-name="wheel-1" x1="143.24" y1="369.17" x2="143.24" y2="320.23" fill="none" stroke="#1d1d1b" stroke-miterlimit="10"/><line class="wheel-1" data-name="wheel-1" x1="125.93" y1="327.4" x2="160.54" y2="362.01" fill="none" stroke="#1d1d1b" stroke-miterlimit="10"/><line class="wheel-1" data-name="wheel-1" x1="125.93" y1="362.01" x2="160.54" y2="327.4" fill="none" stroke="#1d1d1b" stroke-miterlimit="10"/></g><g class="wheel-right"><circle class="wheel" cx="237.9" cy="344.7" r="24.47" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="4"/><line class="wheel-2" data-name="wheel-2" x1="213.43" y1="344.7" x2="262.37" y2="344.7" fill="none" stroke="#1d1d1b" stroke-miterlimit="10"/><line class="wheel-2" data-name="wheel-2" x1="237.9" y1="369.17" x2="237.9" y2="320.23" fill="none" stroke="#1d1d1b" stroke-miterlimit="10"/><line class="wheel-2" data-name="wheel-2" x1="220.59" y1="327.4" x2="255.2" y2="362.01" fill="none" stroke="#1d1d1b" stroke-miterlimit="10"/><line class="wheel-2" data-name="wheel-2" x1="220.59" y1="362.01" x2="255.2" y2="327.4" fill="none" stroke="#1d1d1b" stroke-miterlimit="10"/></g></g><g class="dog" stroke-width="2"><path class="shape" d="M258.33,397.12S311,409,319.83,380.31c5.9-19.15-11.76-16.6-21.56-15-3.88.63-12.69,1.52-16.47.44-4.9-1.39-6.55-4.78-15.06-11.53-36.5-29-58.4-4.86-54.86,64.16A42.32,42.32,0,0,0,192,428.19a1.69,1.69,0,0,1-2.84-1.11c-.32-4.7-1.1-12.1-2.9-12.7,0,0,3.54-21.24-7.52-23,0,0-6.2-50-25.66-19.47,0,0-1.33-18.14-13.72.44s9.73,51.33,9.73,51.33,3.54,20.79,19.91,29.2c14.81,7.6,23.82-.36,29.67,3.61a4.72,4.72,0,0,1,1.94,3.23c.67,4.53,3.28,17.59,11.31,18.94,0,0,20.55,3.67,25.76,0,4.89-3.44,3.24-10.29-5.79-11.84a.34.34,0,0,1,0-.67c3.47-.77,10.8-1.93,11.47,1.77.89,4.87,3.1,11,11.5,12.37s12.39-6.18,7.08-12.81-3.54-70.35-3.54-70.35" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/><circle class="eye" cx="192.92" cy="109.43" r="1.24" fill="none" stroke="#1d1d1b" stroke-miterlimit="10"/><path class="mouth" d="M267.17,381s29.2,11.33,50.56,3.09" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/><path class="ear-1" d="M248.56,338s7.19-63.17-45.63-51.72c-3.41.74-13.6,2.25-31.59.38-13.38-1.4-18.38,12.09-8.62,20.61,29.95,26.13,40-8.62,60,30.73l5.6,14.61" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/><path class="ear-2" d="M216.68,300.15s-33.38-40.3-10.43-43.58a19.16,19.16,0,0,1,14.5,4.07,75,75,0,0,0,19.9,11.06c18,6.74,36.39,35,17.83,76.7" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/><path class="leg" d="M255.72,465.45c.89,4.55,3.1,10.32,11.5,11.58s12.39-5.78,7.08-12-3.54-65.84-3.54-65.84" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/><circle class="nose" cx="255.96" cy="103.63" r="4.29" fill="none" stroke="#1d1d1b" stroke-miterlimit="10"/><path class="tail" d="M164.3,401.71s12.23,6.84,11,20.45,7.08,17.9,7.08,17.9" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/><path class="tail" data-name="tail" d="M151.35,385.54s-6.33,10.38-.21,16.17c17.46,16.51,7.54,26.47,7.54,26.47" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/><path class="tail" data-name="tail" d="M164.3,433.93s3.54,21.45,26.9,14.17" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/><path class="tail" data-name="tail" d="M161.49,372.26s7.4-1.53,11.85,17.24" transform="translate(-61.48 -255.89)" fill="none" stroke="#1d1d1b" stroke-linecap="round" stroke-miterlimit="10"/></g></svg>            
+            </div>
+        </div>
+        <div class="info">
+            <h1 class="title">Doggie car</h1>
+            <h3>Pick the color!</h3>
+            <div class="color-options">
+                <button class="red"> </button>
+                <button class="blue"> </button>
+                <button class="yellow"> </button>
+                <button class="purple"> </button>
+            </div>
+            <div class="purchase__btn">
+                <button>Purchase</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./app.js" ></script>
+</body>
+</html>
